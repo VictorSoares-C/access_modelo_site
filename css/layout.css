@@ -3,7 +3,12 @@
     verde escuro: #074854
     verde claro: #A4D2B1
     off white: #F6FBFE
+    preto: #333333
 */
+
+body{
+    background-color: #F6FBFE;
+}
 
 .layout-cabecalho {
     width: 100%;
@@ -35,4 +40,54 @@
 
 .layout-menu a:hover {
     color: #A4D2B1;
+}
+
+.container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.texto-inicial{
+    text-align: center;
+}
+
+.texto-inicial h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #074854;
+}
+
+.texto-inicial h4{
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.search-container{
+    display: flex;
+}
+
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid #074854;
+    border-radius: 100px 0 0 100px;
+    width: 50vw;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #074854;
+    border-radius: 0 100px 100px 0;
+    background-color: #A4D2B1;
+    color: #F6FBFE;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #074854;
 }
