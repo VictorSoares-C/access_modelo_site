@@ -91,3 +91,18 @@ button{
 button:hover{
     background-color: #074854;
 }
+
+.area-sobre{
+    background-color: #074854;
+}
+
+.layout-sobre h2{
+     color: #A4D2B1;
+     margin-bottom: 20px;   
+}
+
+.layout-sobre h4{
+    color: #F6FBFE;
+    text-align: justify;
+}
+
