@@ -1,0 +1,74 @@
+/* INICIO FORMATAÇõES GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+/* FIM FORMATAÇÕES GERAIS */
+
+/* RESPONSIVIDADE DA FONTE ROBOTO DO GOOGLE FONTS */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho responsivo para h1 */
+    }
+
+    h2 {
+        font-size: 2rem; /* Tamanho responsivo para h2 */
+    }
+
+    h3 {
+        font-size: 1.75rem; /* Tamanho responsivo para h3 */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Tamanho responsivo para h4 */
+    }
+
+    h5 {
+        font-size: 1.25rem; /* Tamanho responsivo para h5 */
+    }
+
+    h6 {
+        font-size: 1rem; /* Tamanho responsivo para h6 */
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 3rem; /* Tamanho responsivo para h1 */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Tamanho responsivo para h2 */
+    }
+
+    h3 {
+        font-size: 2rem; /* Tamanho responsivo para h3 */
+    }
+
+    h4 {
+        font-size: 1.75rem; /* Tamanho responsivo para h4 */
+    }
+
+    h5 {
+        font-size: 1.5rem; /* Tamanho responsivo para h5 */
+    }
+
+    h6 {
+        font-size: 1.25rem; /* Tamanho responsivo para h6 */
+    }
+}
+
+@media (max-width: 800px){
+    
+}
+
+/* FIM DA RESPONSIVIDADE */

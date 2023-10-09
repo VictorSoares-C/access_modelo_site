@@ -1,0 +1,38 @@
+/* Cores do Access:
+    verde mais escuro: #032A31
+    verde escuro: #074854
+    verde claro: #A4D2B1
+    off white: #F6FBFE
+*/
+
+.layout-cabecalho {
+    width: 100%;
+    height: 18vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #074854;
+}
+
+
+.logo {
+    height: 15vh;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
+}
+
+.layout-menu a {
+    text-decoration: none;
+    color: #F6FBFE;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.layout-menu a:hover {
+    color: #A4D2B1;
+}
