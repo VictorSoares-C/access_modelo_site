@@ -16,19 +16,15 @@ body {
 .layout-cabecalho {
     width: 100%;
     height: 18vh;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background-color: #074854;
 }
-
 
 .logo {
     height: 80px;
     max-width: 70%;
-
     display: flex;
     align-items: center;
 }
@@ -41,10 +37,14 @@ body {
     transition: color 0.3s ease;
 }
 
+.barra-pesquisa::placeholder {
+    color: #074854;
+    font-style: italic;
+}
+
 .layout-menu a:hover {
     color: #A4D2B1;
 }
-
 /* CSS Barra de Pesquisa */
 
 .container {
@@ -123,6 +123,8 @@ button:hover {
     color: #A4D2B1;
     margin-bottom: 20px;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout-sobre p {
@@ -131,6 +133,8 @@ button:hover {
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout-sobre hr {
@@ -152,7 +156,6 @@ button:hover {
 #restaurantes h1 {
     margin-bottom: 30px;
     color: #074854;
-
 }
 
 .container-restaurantes {
@@ -176,7 +179,7 @@ button:hover {
 }
 
 .card img {
-    max-width: 100%;
+    width: 250px;
     max-height: 200px;
 }
 
@@ -292,6 +295,9 @@ button:hover {
 
 .card-blog-img {
     max-width: 30%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-blog-img img {
@@ -336,14 +342,16 @@ button:hover {
     background-color: #A4D2B1;
 }
 
-@media (max-width: 767px) and (max-width: 991px){
+@media (max-width: 900px) {
     .card-blog {
         flex-direction: column;
         max-height: none;
+        text-align: justify;
     }
 
     .card-blog-img {
-        max-width: 100%;
+        margin-top: 30px;
+        max-width: 80%;
         margin-bottom: 10px;
     }
 

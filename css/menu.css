@@ -19,6 +19,7 @@
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block; /* Mostrar o botão de menu em telas pequenas */
+        display: none;
     }
 
     .layout-menu {
