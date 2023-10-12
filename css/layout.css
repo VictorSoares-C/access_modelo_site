@@ -6,9 +6,12 @@
     preto: #333333
 */
 
-body{
+/* CSS Body */
+body {
     background-color: #F6FBFE;
 }
+
+/* CSS Cabeçalho */
 
 .layout-cabecalho {
     width: 100%;
@@ -23,8 +26,8 @@ body{
 
 
 .logo {
-    height: 15vh;
-    max-width: 80%;
+    height: 80px;
+    max-width: 70%;
 
     display: flex;
     align-items: center;
@@ -42,43 +45,45 @@ body{
     color: #A4D2B1;
 }
 
-.container{
+/* CSS Barra de Pesquisa */
+
+.container {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
 }
 
-.texto-inicial{
+.texto-inicial {
     text-align: center;
 }
 
-.texto-inicial h1{
+.texto-inicial h1 {
     margin-bottom: 20px;
     font-weight: bold;
     color: #074854;
 }
 
-.texto-inicial h4{
+.texto-inicial h4 {
     color: #333333;
     margin-bottom: 5px;
 }
 
-.search-container{
+.search-container {
     display: flex;
 }
 
-input[type="text"]{
+input[type="text"] {
     padding: 10px;
     border: 1px solid #074854;
     border-radius: 100px 0 0 100px;
     width: 50vw;
 }
 
-button{
+button {
     padding: 10px 20px;
     font-size: 16px;
     border: 1px solid #074854;
@@ -88,21 +93,275 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #074854;
 }
 
-.area-sobre{
+/* CSS SOBRE */
+
+.area-sobre {
     background-color: #074854;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.layout-sobre h2{
-     color: #A4D2B1;
-     margin-bottom: 20px;   
+.container-sobre {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80%;
+
+    display: flex;
+    align-items: center;
 }
 
-.layout-sobre h4{
+.layout-sobre h2 {
+    color: #A4D2B1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.layout-sobre p {
     color: #F6FBFE;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.layout-sobre hr {
+    border: 1px solid #F6FBFE; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* CSS Restaurantes */
+
+#restaurantes {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #F6FBFE;
+}
+
+#restaurantes h1 {
+    margin-bottom: 30px;
+    color: #074854;
+
+}
+
+.container-restaurantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #A4D2B1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.card h2 {
+    color: #074854;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.avaliacao {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 25px;
+}
+
+.card a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #074854;
+    font-weight: bold;
+}
+
+#veja-mais {
+    background-color: #A4D2B1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#veja-mais:hover {
+    background-color: #074854;
+}
+
+/* CSS SELO */
+
+#selo {
+    background-color: #074854;
+    padding: 50px 0;
+}
+
+.container-selo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin: 0 auto;
+}
+
+.selo-texto {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.selo-imagem {
+    max-width: 300px;
+    height: auto;
+}
+
+.selo-imagem img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.selo-texto h1 {
+    color: #A4D2B1;
+    margin-bottom: 10px;
+}
+
+.selo-texto p {
+    font-size: 18px;
+    color: #F6FBFE;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
+/* CSS BLOG */
+
+#blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-blog h1 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #074854;
+}
+
+.card-blog {
+    display: flex;
+    max-height: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #A4D2B1;
+    border-radius: 10px;
+}
+
+.card-blog-img {
+    max-width: 30%;
+}
+
+.card-blog-img img {
+    width: 100%;
+    height: auto;
+}
+
+.card-blog-content {
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.card-blog-content h2 {
+    margin-top: 0;
+    color: #074854;
+    margin-bottom: 20px;
+}
+
+.card-blog-content p {
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.button-container button {
+    background-color: #074854;
+    color: #F6FBFE;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #A4D2B1;
+}
+
+@media (max-width: 767px) and (max-width: 991px){
+    .card-blog {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .card-blog-img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-blog-content {
+        width: 100%;
+    }
+}
+
+/* RODAPÉ */
+
+.layout-rodape {
+    background-color: #074854;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.layout-rodape p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -22,11 +24,16 @@
                 <img src="./img/logo_access.png" alt="Logo Access" height="99%">
             </div>
         </a>
-        <nav class="layout-menu">
-            <a href="#">SOBRE NÓS</a>
-            <a href="#">RESTAURANTES</a>
-            <a href="#">CONHEÇA O SELO</a>
-            <a href="#">BLOG</a>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="layout-menu" id="menu-nav">
+            <a href="#sobre-nos">SOBRE NÓS</a>
+            <a href="#restaurantes">RESTAURANTES</a>
+            <a href="#selo">CONHEÇA O SELO</a>
+            <a href="#blog">BLOG</a>
         </nav>
     </header>
     <!-- FIM CABEÇALHO -->
@@ -45,25 +52,202 @@
     <!-- FIM SEARCH CONTAINER -->
 
     <!-- SOBRE NÓS -->
-    <section class="area-sobre">
-        <div class="container">
+    <section class="area-sobre" id="sobre-nos">
+        <div class="container-sobre">
             <div class="layout-sobre">
-                <div>
-                    <h2>Queremos auxiliar pessoas com diferentes necessidade de mobilidade a encontrar restaurantes.
-                    </h2>
-                    <h4>A Access surgiu da necessidade de auxiliar pessoas com dificuldades de mobilidade a encontrar
-                        restaurantes na cidade com facilidade. Nosso site lista exclusivamente estabelecimentos que
-                        atendem a diversos requisitos de acessibilidade em seus espaços, garantindo uma experiência
-                        inclusiva para todos os clientes.</h4>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img src="./img/restaurante_acessível.jpg" alt="Restaurante Acessível" width="90%">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h2>Queremos auxiliar pessoas com diferentes necessidade de mobilidade a encontrar restaurantes.
+                        </h2>
+                        <p>A Access surgiu da necessidade de auxiliar pessoas com dificuldades de mobilidade a
+                            encontrar
+                            restaurantes na cidade com facilidade. Nosso site lista exclusivamente estabelecimentos que
+                            atendem a diversos requisitos de acessibilidade em seus espaços, garantindo uma experiência
+                            inclusiva para todos os clientes.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2>Possui um restaurante e quer garantir seu selo? Entre em contato!</h2>
+                        <p>Nosso compromisso com a inclusão vai além das palavras – é uma missão que vivemos diariamente
+                            na Access. Se você é proprietário de um restaurante e está comprometido em proporcionar uma
+                            experiência verdadeiramente acessível para todos os seus clientes, então você está no lugar
+                            certo. Nossa equipe vai passar todas as informações e tirar todas as suas dúvidas.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="./img/restaurante_modelo_sobre.jpg" alt="Restaurante" width="90%">
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     </section>
     <!-- FIM SOBRE NÓS -->
 
+    <!-- RESTAURANTES -->
+    <section id="restaurantes">
+        <div>
+            <h1>Você pode gostar:</h1>
+        </div>
+        <div class="container-restaurantes">
+            <div class="card">
+                <img src="./img/restaurante_bordeaux.jpg" alt="Bordeaux">
+                <h2>Bordeaux</h2>
+                <p>Espaço gastronômico tem bistrô com fondue e sobremesas, além da lojinha de vinhos e queijos
+                    especiais.</p>
+                <div class="avaliacao">
+                    Avaliação:
+                    <span class="estrelas">★★★★★</span>
+                </div>
+                <a href="#">Ver Avaliações</a>
+            </div>
+
+            <div class="card">
+                <img src="./img/paraíso_das_flores.jpg" alt="Paraíso das Flores">
+                <h2>Paraíso das Flores</h2>
+                <p>Primeiro café com flores de Petrópolis 🌸☕️</p>
+                <div class="avaliacao">
+                    Avaliação:
+                    <span class="estrelas">★★★★★</span>
+                </div>
+                <a href="#">Ver Avaliações</a>
+            </div>
+
+            <div class="card">
+                <img src="./img/restaurante_maiz.jpg" alt="Restaurante Maiz">
+                <h2>Restaurante Maiz</h2>
+                <p>Petiscos e pratos típicos da culinária peruana. Espaço tranquilo e acolhedor
+                    com jardim.</p>
+                <div class="avaliacao">
+                    Avaliação:
+                    <span class="estrelas">★★★★★</span>
+                </div>
+                <a href="#">Ver Avaliações</a>
+            </div>
+        </div>
+        <button id="veja-mais">Veja Mais</button>
+    </section>
+    <!-- FIM RESTAURANTES -->
+
+    <!-- SELO -->
+    <section id="selo">
+        <div class="container-selo row">
+            <div class="selo-texto">
+                <h1>Bem-Vindo ao Acesso Inclusivo!</h1>
+            </div>
+            <div class="selo-imagem col-12 col-md-6">
+                <img src="./img/selo_access.png" alt="Selo Access">
+            </div>
+            <div class="selo-texto col-12 col-md-6">
+
+                <p>Estamos dedicados a tornar nossa cidade mais acessível para todos. Nosso selo distintivo é exibido
+                    em vários restaurantes que oferecem comodidades para pessoas com mobilidade reduzida, proporcionando
+                    uma experiência gastronômica verdadeiramente inclusiva. Descubra estabelecimentos com infraestrutura
+                    adequada e avaliações detalhadas, criando um ambiente acolhedor e acessível em nossa comunidade.
+                    Junte-se a nós enquanto promovemos a igualdade de acesso e celebramos a diversidade em cada
+                    refeição.</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIM SELO -->
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="container-blog">
+            <div>
+                <h1>Posts mais recentes em nosso blog:</h1>
+            </div>
+            <div class="card-blog">
+                <div class="card-blog-img">
+                    <img src="/img/gastronomia_inclusiva.jpg" alt="Gastronomia Inclusiva">
+                </div>
+                <div class="card-blog-content">
+                    <h2>Explorando a Gastronomia Inclusiva</h2>
+                    <p>Descubra restaurantes em Petrópolis que estão liderando o caminho na culinária inclusiva.
+                        Conheça
+                        suas iniciativas, pratos adaptados e como eles estão criando experiências gastronômicas
+                        acessíveis para todos.</p>
+                    <div class="button-container">
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-blog">
+                <div class="card-blog-img">
+                    <img src="./img/istockphoto-1226175524-612x612.jpg" alt="Pessoas no restaurante">
+                </div>
+                <div class="card-blog-content">
+                    <h2>Acessibilidade Além dos Restaurantes</h2>
+                    <p>Vamos além dos restaurantes e exploramos a acessibilidade em diferentes locais de Petrópolis.
+                        Descubra espaços públicos, pontos turísticos e atividades acessíveis para pessoas com
+                        mobilidade reduzida, tornando a cidade mais inclusiva para todos.</p>
+                    <div class="button-container">
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-blog">
+                <div class="card-blog-img">
+                    <img src="./img/imagem_sem_gluten.jpg" alt="Receitas Adaptadas">
+                </div>
+                <div class="card-blog-content">
+                    <h2>Receitas Adaptadas para todos</h2>
+                    <p>Explore receitas deliciosas e adaptadas para diversas necessidades alimentares. Desde
+                        pratos sem glúten até opções veganas, descubra como preparar refeições inclusivas em sua
+                        própria casa. Dicas úteis, truques e histórias inspiradoras aguardam você.</p>
+                    <div class="button-container">
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM BLOG -->
+
+    <!-- COPYRIGHT -->
+    <footer class="layout-rodape">
+        <div class="copyright">
+            <p>&copy; 2023 Access. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <!-- FIM COPYRIGHT -->
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- FIM JQUERY -->
+
+    <!-- SCRIPT MENU -->
+    <script src="./js/menu.js"></script>
+    <!-- FIM SCRIPT MENU -->
+
+    <!-- SCRIPT MENU ROLAGEM -->
+    <script>
+        // Seleciona todos os links de navegação interna
+        const linksInternos = document.querySelectorAll('a[href^="#"]');
+
+        // Adiciona um evento de clique a cada link interno
+        linksInternos.forEach(link => {
+            link.addEventListener('click', function (e) {
+                // Previne o comportamento padrão do link (não segue o href imediatamente)
+                e.preventDefault();
+
+                // Obtém o destino do link interno (id da seção)
+                const targetId = this.getAttribute('href').substring(1);
+
+                // Obtém a seção de destino com base no id
+                const targetSection = document.getElementById(targetId);
+
+                // Rola suavemente até a seção de destino usando scrollIntoView
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- FIM SCRIPT -->
 
 
 

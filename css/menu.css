@@ -1,0 +1,27 @@
+/* Estilos para o botão de menu hamburguer */
+.menu-toggle {
+    display: none; /* Ocultar por padrão em telas grandes */
+    cursor: pointer;
+}
+
+.menu-active {
+    display: block !important;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+}
+
+/* Estilos para telas pequenas (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar o botão de menu em telas pequenas */
+    }
+
+    .layout-menu {
+        display: none; /* Ocultar o menu atual em telas pequenas */
+    }
+}
