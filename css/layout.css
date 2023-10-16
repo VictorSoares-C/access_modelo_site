@@ -6,9 +6,17 @@
     preto: #333333
 */
 
+:root {
+    --verde-mais-escuro: #032A31;
+    --verde-escuro: #074854;
+    --verde-claro: #A4D2B1;
+    --off-white: #F6FBFE;
+    --preto: #333333;
+}
+
 /* CSS Body */
 body {
-    background-color: #F6FBFE;
+    background-color: var(--off-white);
 }
 
 /* CSS Cabeçalho */
@@ -45,6 +53,7 @@ body {
 .layout-menu a:hover {
     color: #A4D2B1;
 }
+
 /* CSS Barra de Pesquisa */
 
 .container {
@@ -114,7 +123,6 @@ button:hover {
     margin-left: 10%;
     margin-right: 10%;
     max-width: 80%;
-
     display: flex;
     align-items: center;
 }
@@ -138,11 +146,10 @@ button:hover {
 }
 
 .layout-sobre hr {
-    border: 1px solid #F6FBFE; 
+    border: 1px solid #F6FBFE;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 
 /* CSS Restaurantes */
 
@@ -172,6 +179,11 @@ button:hover {
     margin: 10px;
     text-align: center;
     max-width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    transition: 0.6s ease-in-out;
 }
 
 .card h2 {
@@ -227,11 +239,16 @@ button:hover {
     padding: 50px 0;
 }
 
+.imagem-selo:hover {
+    transform: scale(1.04);
+    transition: 0.6s ease-in-out;
+}
+
 .container-selo {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -291,6 +308,11 @@ button:hover {
     margin-bottom: 20px;
     border: 1px solid #A4D2B1;
     border-radius: 10px;
+}
+
+.card-blog:hover {
+    transform: scale(1.04);
+    transition: 0.6s ease-in-out;
 }
 
 .card-blog-img {

@@ -1,28 +1,72 @@
-/* Estilos para o botão de menu hamburguer */
-.menu-toggle {
-    display: none; /* Ocultar por padrão em telas grandes */
-    cursor: pointer;
-}
-
-.menu-active {
-    display: block !important;
-}
-
-.menu-toggle .bar {
-    background-color: #fff;
+.hamburguer-icon {
+    width: 30px;
     height: 3px;
-    width: 25px;
-    margin: 5px 0;
+    background-color: white;
+    margin: 6px 0;
+    cursor: pointer;
+    padding: 2px;
+    display: none;
 }
 
-/* Estilos para telas pequenas (dispositivos móveis) */
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar o botão de menu em telas pequenas */
+.container-menu {
+    flex-direction: row;
+    background-color: #074854;
+    padding: 10px;
+}
+
+.menu {
+    flex-direction: row;
+    background-color: #074854;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.menu.active {
+    display: flex;
+    text-align: right;
+    margin-top: -20px;
+}
+
+@media (max-width: 900px) {
+    .container-menu {
+        flex-direction: column;
+    }
+
+    .menu {
         display: none;
     }
 
-    .layout-menu {
-        display: none; /* Ocultar o menu atual em telas pequenas */
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .hamburguer-icon {
+        width: 30px;
+        height: 2.5px;
+        background-color: white;
+        margin: 6px 0;
+        cursor: pointer;
+        padding: 2px;
+        display: block;
+
+    }
+
+    .container-menu {
+        flex-direction: row;
+        background-color: #074854;
+        padding: 10px;
+        align-items: right;
+    }
+
+    .menu.active {
+        text-align: center;
     }
 }
