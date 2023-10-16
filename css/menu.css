@@ -17,7 +17,9 @@
 .menu {
     flex-direction: row;
     background-color: #074854;
-    padding: 10px;
+    padding: 20px 10px;
+    margin-top: -80px;
+    text-align: right;
 }
 
 .menu a {
