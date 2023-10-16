@@ -24,6 +24,7 @@
 
 .menu a {
     text-decoration: none;
+    font-weight: bolder;
     color: white;
     margin: 5px;
 }
